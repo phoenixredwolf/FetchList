@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FetchList</string>
+    <string name="empty_list_message">No items to display.</string>
+    <string name="refresh_icon_description">Refresh</string>
+    <string name="retry_button_text">Retry</string>
+    <string name="error_message_default">An unknown error occurred.</string>
+    <string name="screen_title">Grouped Items</string>
+
+</resources>

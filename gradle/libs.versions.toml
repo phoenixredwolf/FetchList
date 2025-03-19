@@ -1,0 +1,117 @@
+[versions]
+
+# Android
+agp = "8.9.0"
+coreKtx = "1.15.0"
+lifecycleRuntimeKtx = "2.8.7"
+
+# Compose
+activityCompose = "1.10.1"
+composeBom = "2025.03.00"
+
+# Coroutines
+coroutines = "1.8.0"
+
+# Google
+accompanist = "0.32.0"
+uiTextGoogleFonts = "1.7.8"
+
+# Koin
+koin = "4.0.2"
+
+# Kotlin
+kotlin = "2.1.10"
+ksp = "2.1.10-1.0.30"
+
+# Material Design
+material = "1.3.1"
+
+# Moshi
+moshi = "1.15.2"
+
+# Navigation
+navigation = "2.8.9"
+
+# OkHTTP
+okhttp = "4.12.0"
+
+# Retrofit
+retrofit = "2.9.0"
+
+# Testing
+espressoCore = "3.6.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+kotlinTest = "2.1.0"
+mockitoInline = "5.16.1"
+mockitoKotlin = "5.4.0"
+mockK = "1.13.5"
+turbine = "1.0.0"
+
+[libraries]
+
+# Android
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+# Compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+# Coroutines
+kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# Google
+accompanist-flowlayout = { module = "com.google.accompanist:accompanist-flowlayout", version.ref = "accompanist" }
+androidx-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
+
+# Koin
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+
+# Material Design
+androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material" }
+
+# Moshi
+moshi-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+
+# Navigation
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+
+# OkHTTP
+okhttp3-base = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp3-logging = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp"}
+
+# Retrofit
+retrofit-base = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+
+# Testing
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+koin-junit4 = { module = "io.insert-koin:koin-test-junit4", version.ref = "koin" }
+koin-junit5 = { module = "io.insert-koin:koin-test-junit5", version.ref = "koin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlinTest" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoInline" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockK" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockK" }
+okhttp3-mockwebserver = { module = "com.squareup.okhttp3:mockwebserver", version.ref = "okhttp" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
