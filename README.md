@@ -40,7 +40,7 @@ This Android application demonstrates fetching, grouping, and displaying a list 
 1.  Clone the repository:
 
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/phoenixredwolf/FetchList.git
     ```
 
 2.  Open the project in Android Studio.
